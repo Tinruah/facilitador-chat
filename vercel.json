@@ -1,0 +1,51 @@
+# Facilitador Chat · Tigo
+
+Herramienta comercial para asesores de portabilidad Tigo. Permite crear, personalizar y enviar mensajes conversacionales estructurados por WhatsApp.
+
+## Stack
+- React 18 + Vite 5
+- CSS-in-JS (estilos globales inline con template literals)
+- localStorage para persistencia de feedback y encuestas
+- API de Anthropic para el asistente IA guiado
+
+## Instalación local
+
+```bash
+npm install
+npm run dev
+```
+
+## Deploy en Vercel
+
+1. Sube el proyecto a GitHub
+2. Importa el repositorio en [vercel.com](https://vercel.com)
+3. Vercel detecta Vite automáticamente
+4. Haz clic en Deploy
+
+Sin variables de entorno necesarias para el prototipo.
+El módulo IA usa la API de Anthropic — si el entorno no la inyecta, cae al fallback de la biblioteca interna.
+
+## Usuarios de prueba
+
+| Usuario   | Rol       | Líder                        |
+|-----------|-----------|------------------------------|
+| jpabong   | Asesor    | YORDYN HERNANDEZ REYES       |
+| nmunores  | Asesor    | YORDYN HERNANDEZ REYES       |
+| amartpal  | Asesor    | KAREN ALEXA VALENCIA COSSIO  |
+| tpatinru  | Admin     | —                            |
+
+## Estructura del proyecto
+
+```
+facilitador-chat/
+├── public/
+│   └── favicon.svg
+├── src/
+│   ├── main.jsx       # Punto de entrada React
+│   └── App.jsx        # Aplicación completa
+├── index.html
+├── package.json
+├── vite.config.js
+├── vercel.json
+└── .gitignore
+```
