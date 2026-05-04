@@ -1226,4 +1226,3 @@ export default function App() {
     </>
   );
 }
-Actualiza App.jsx con versión nueva de Claude
